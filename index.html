@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        Prvi broj: <input type="text" id="broj1">
+        <br>
+        Drugi broj: <input type="text" id="broj2">
+        <br>
+        <button onclick="zbroji()">Zbroji</button>
+        <br>
+        <p id="rezultat"></p>
+
+    <script>
+        function zbroji() 
+        {
+            let a=Number(document.getElementById("broj1").value);
+            let b=Number(document.getElementById("broj2").value);
+            document.getElementById("rezultat").textContent=a+b;
+        }
+    </script>
+
+</body>
+</html>
