@@ -10,14 +10,16 @@
         <br>
         Drugi broj: <input type="text" id="broj2">
         <br>
-        <button onclick="zbroji()">Zbroji</button>
+        <button onclick="Zbroji()">Zbroji</button>
         <br>
         <button onclick="Oduzmi()">Oduzmi</button>
+        <br>
+        <button onclick="Mnozi()">Mnozi</button>
         <br>
         <p id="rezultat"></p>
 
     <script>
-        function zbroji() 
+        function Zbroji() 
         {
             let a=Number(document.getElementById("broj1").value);
             let b=Number(document.getElementById("broj2").value);
@@ -28,6 +30,12 @@
             let a=Number(document.getElementById("broj1").value);
             let b=Number(document.getElementById("broj2").value);
             document.getElementById("rezultat").textContent=a-b;
+        }
+        function Mnozi() 
+        {
+            let a=Number(document.getElementById("broj1").value);
+            let b=Number(document.getElementById("broj2").value);
+            document.getElementById("rezultat").textContent=a*b;
         }
     </script>
 
